@@ -22,7 +22,7 @@ The objective of this project is to develop a machine learning model that predic
 ## 🛠️ Technologies Used
 
 - **Language**: Python
-- **Tools**: google colab
+- **Tools**: jupyter notebook
 - **Libraries**: pandas, numpy, matplotlib, seaborn, scikit-learn
 
 ## 📊 Results
@@ -40,54 +40,73 @@ The objective of this project is to develop a machine learning model that predic
 
 ## 🗃️ Files in This Repository
 
-- Telecom_Churn_Case_Study.ipynb: The main google colab Notebook with code and visualizations.
+- Telecom_Churn_Case_Study.ipynb: The main jupyter Notebook with code and visualizations.
 - telecom_churn.csv: The dataset used.
 - README.md: This file.
 
-## 🚀 How to Run in Google Colab
+## 🚀 How to Run Locally in Jupyter Notebook
 
-You can run this project entirely in the cloud using **Google Colab** with no need for local setup. Follow these steps:
+Follow the steps below to run this project on your local machine using Jupyter Notebook:
 
-### 1. Open the Notebook in Google Colab
+### 1. Clone the Repository
 
-Click the badge below to launch the notebook in Colab:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yourusername/telecom-churn-prediction/blob/main/Telecom_Churn_Case_Study.ipynb)
+git clone https://github.com/yourusername/telecom-churn-prediction.git
+cd telecom-churn-prediction
 
-> 📌 Replace `yourusername` with your actual GitHub username in the link above if you haven't yet.
 
----
+> Replace `yourusername` with your actual GitHub username.
 
-### 2. Upload the Dataset
+### 2. (Optional) Create and Activate a Virtual Environment
 
-Since Google Colab cannot access files from your computer directly unless uploaded, follow these steps:
+It's a good practice to isolate dependencies using a virtual environment.
 
-1. Click the **folder icon** (📁) in the left sidebar of Colab.
-2. Click the **upload icon** (📤).
-3. Upload the file named `telecom chrn.csv`.
+**For Windows:**
 
-> ⚠️ Make sure the uploaded file name exactly matches what is referenced in the notebook.
 
----
+python -m venv venv
+venv\Scripts\activate
 
-### 3. Run All Notebook Cells
 
-- Go through each cell in `Telecom_Churn_Case_Study.ipynb`.
-- The notebook includes:
-  - Data loading and cleaning
-  - Exploratory Data Analysis (EDA)
-  - Model training and testing
-  - Evaluation metrics (accuracy, precision, recall, F1 score)
-  - Business insights
+**For macOS/Linux:**
 
----
+
+python3 -m venv venv
+source venv/bin/activate
+
+
+### 3. Install Required Libraries
+
+Install all necessary packages using pip:
+
+
+pip install pandas numpy matplotlib seaborn scikit-learn
+
+
+### 4. Launch Jupyter Notebook
+
+Start Jupyter Notebook in your browser:
+
+
+jupyter notebook
+
+
+### 5. Open and Run the Notebook
+
+- In the Jupyter dashboard, open `Telecom_Churn_Case_Study.ipynb`
+- Make sure the file `telecom chrn.csv` is present in the same directory
+- Run each cell in order to:
+  - Load and preprocess the dataset
+  - Perform Exploratory Data Analysis (EDA)
+  - Train and evaluate machine learning models
+  - Review performance metrics and insights
 
 ### ✅ Output
 
-At the end of execution, you will get:
+After running the notebook, you will get:
 - A trained churn prediction model
-- Visual insights about customer behavior
-- Actionable understanding of why customers churn
+- Visual insights into churn patterns
+- Evaluation metrics like accuracy, precision, recall, and F1 score
 
-> ✅ Colab is a free platform that supports GPU acceleration (optional) and requires only a Google account.
+> Ensure Python 3.x and Jupyter are properly installed before beginning.
 
